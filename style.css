@@ -6,6 +6,7 @@ body {
     font-family: 'Poppins', Helvetica, sans-serif;
     color: #57705B;
     font-size: 15px;
+    max-width: 100%;
 }
 p{
     font-weight: 400;
@@ -243,7 +244,7 @@ nav{
     color:#AABCA3;
 }
 
-@media(max-width: 700px){
+@media(max-width: 600px){
     section{
         margin: 0;
         margin-top: 10px;
@@ -273,20 +274,23 @@ nav{
         width: 100%;
         float: none;
     }
+    .intro .container{
+        margin: 0 0;
+        max-width: 340px;
+    }
     .project-row{
         display: block; 
         float: none; 
-        width: 100%;
-        margin-left: 40px;
+        max-width: 100%;
     }
     .container{
-        width: 350px;
+        max-width: 340px;
         display: block;
-        margin: 0;
+        margin: 0 0;
         margin-bottom: 40px;
     }
     .resume iframe{
-        width: 100%;
+        width: 320px;
         height: 500px;
         margin: 0 0;
         position: flex;
@@ -295,5 +299,13 @@ nav{
     .portrait{
         width: 100%;
         margin: 0 auto;
+    }
+
+    footer svg{
+        width: 20px;
+        height: 20px
+    }
+    footer{
+        padding: 0 0;
     }
 }
